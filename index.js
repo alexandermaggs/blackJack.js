@@ -1,6 +1,6 @@
 let player = {
   name: "Alexander",
-  chips: 0,
+  chips: 200,
 };
 
 let cards = [];
@@ -27,11 +27,9 @@ function getRandomCard() {
 }
 
 function startGame() {
-  // Generate two random numbes
   isAlive = true;
   let firstCard = getRandomCard();
   let secondCard = getRandomCard();
-  // Re-assign the cards and sum variables so that the game can start
   sum = firstCard + secondCard;
   cards = [firstCard, secondCard];
   renderGame();
